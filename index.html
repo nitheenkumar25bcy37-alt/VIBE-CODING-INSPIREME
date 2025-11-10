@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InspireMe - Quotes & Motivation</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>✨ InspireMe</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#study" class="nav-link">Study</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#hardwork" class="nav-link">Hard Work</a></li>
+                <li><a href="#quotes" class="nav-link">All Quotes</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Get Inspired. Stay Motivated.</h1>
+            <p class="hero-subtitle">Discover powerful quotes to fuel your journey towards success</p>
+            <button class="cta-button" onclick="scrollToSection('study')">Start Your Journey</button>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="arrow"></div>
+        </div>
+    </section>
+
+    <!-- Study Motivation Section -->
+    <section id="study" class="motivation-section">
+        <div class="container">
+            <h2 class="section-title">📚 Study Motivation</h2>
+            <p class="section-subtitle">Fuel your learning journey with powerful motivation</p>
+            <div class="quotes-grid" id="study-quotes">
+                <!-- Quotes will be loaded by JavaScript -->
+            </div>
+            <button class="load-more-btn" onclick="loadMoreQuotes('study')">Load More Quotes</button>
+        </div>
+    </section>
+
+    <!-- Work Motivation Section -->
+    <section id="work" class="motivation-section alt">
+        <div class="container">
+            <h2 class="section-title">💼 Work Motivation</h2>
+            <p class="section-subtitle">Stay motivated and excel in your professional life</p>
+            <div class="quotes-grid" id="work-quotes">
+                <!-- Quotes will be loaded by JavaScript -->
+            </div>
+            <button class="load-more-btn" onclick="loadMoreQuotes('work')">Load More Quotes</button>
+        </div>
+    </section>
+
+    <!-- Hard Work Motivation Section -->
+    <section id="hardwork" class="motivation-section">
+        <div class="container">
+            <h2 class="section-title">🔥 Hard Work Motivation</h2>
+            <p class="section-subtitle">Embrace the power of perseverance and dedication</p>
+            <div class="quotes-grid" id="hardwork-quotes">
+                <!-- Quotes will be loaded by JavaScript -->
+            </div>
+            <button class="load-more-btn" onclick="loadMoreQuotes('hardwork')">Load More Quotes</button>
+        </div>
+    </section>
+
+    <!-- All Quotes Section -->
+    <section id="quotes" class="motivation-section alt">
+        <div class="container">
+            <h2 class="section-title">💬 All Quotes</h2>
+            <p class="section-subtitle">Browse through all motivational quotes</p>
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterQuotes('all')">All</button>
+                <button class="filter-btn" onclick="filterQuotes('study')">Study</button>
+                <button class="filter-btn" onclick="filterQuotes('work')">Work</button>
+                <button class="filter-btn" onclick="filterQuotes('hardwork')">Hard Work</button>
+            </div>
+            <div class="quotes-grid" id="all-quotes">
+                <!-- Quotes will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 InspireMe. Stay motivated, achieve greatness!</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
